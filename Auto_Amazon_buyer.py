@@ -11,7 +11,7 @@ while True:
     time.sleep(5)
     pyautogui.press('home')
     time.sleep(5)
-    buy_now_button_location = pyautogui.locateOnScreen('Buy_Now.png', confidence=0.9)
+    buy_now_button_location = pyautogui.locateOnScreen('Buy_Now_2.png', confidence=0.9)
     if buy_now_button_location:
         print("buy_now_button_location")
         print(buy_now_button_location)
@@ -22,7 +22,7 @@ while True:
 
         time.sleep(5)
 
-    place_your_order_button_location = pyautogui.locateOnScreen('Place_your_order.png', confidence=0.9)
+    place_your_order_button_location = pyautogui.locateOnScreen('Place_your_order_2.png', confidence=0.9)
     if place_your_order_button_location:
         print("place_your_order_button_location")
         print(place_your_order_button_location)
