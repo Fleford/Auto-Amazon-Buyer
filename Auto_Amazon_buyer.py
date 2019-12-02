@@ -14,7 +14,7 @@ while True:
 
     red_Currently_unavailable_location = pyautogui.locateOnScreen('red_Currently_unavailable.png', confidence=0.9)
     if red_Currently_unavailable_location:
-        print("buy_now_button_location")
+        print("red_Currently_unavailable_location")
         print(red_Currently_unavailable_location)
         print()
         red_Currently_unavailable_point = pyautogui.center(red_Currently_unavailable_location)
