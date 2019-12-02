@@ -7,11 +7,6 @@ time.sleep(5)
 print("Starting loop...")
 while True:
     time.sleep(5)
-    pyautogui.press('f5')
-    time.sleep(5)
-    pyautogui.press('home')
-    time.sleep(5)
-
     red_Currently_unavailable_location = pyautogui.locateOnScreen('red_Currently_unavailable.png', confidence=0.9)
     if red_Currently_unavailable_location:
         print("red_Currently_unavailable_location")
@@ -22,6 +17,11 @@ while True:
         pyautogui.click(red_Currently_unavailable_x, red_Currently_unavailable_y)
 
         time.sleep(5)
+
+    pyautogui.press('f5')
+    time.sleep(5)
+    pyautogui.press('home')
+    time.sleep(5)
 
     buy_now_button_location = pyautogui.locateOnScreen('Buy_Now_2.png', confidence=0.9)
     if buy_now_button_location:
